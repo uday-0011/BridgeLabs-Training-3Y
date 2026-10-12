@@ -1,0 +1,21 @@
+/* Question 5: Button styles and pseudo-classes */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; background: #f5f7fb; color: #243247; }
+header, footer { text-align: center; padding: 24px; }
+header h1 { margin-bottom: 8px; }
+main { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; }
+.button-card { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 16px; max-width: 850px; padding: 28px; background: white; border-radius: 16px; box-shadow: 0 10px 28px #17255418; }
+.btn { padding: 12px 20px; border: 2px solid transparent; border-radius: 8px; font-weight: 700; font-size: 15px; cursor: pointer; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.btn:hover:not(:disabled) { transform: translateY(-3px); box-shadow: 0 7px 14px #14213d25; }
+.btn:active:not(:disabled) { transform: scale(.96); }
+.primary { color: white; background: #2563eb; }
+.primary:hover { background: #1d4ed8; }
+.secondary { color: #243247; background: #e5eaf2; }
+.secondary:hover { background: #cbd5e1; }
+.outline { color: #0f766e; background: white; border-color: #0f766e; }
+.outline:hover { color: white; background: #0f766e; }
+.focus-demo { color: white; background: #7c3aed; }
+.btn:focus-visible { outline: 3px solid #f59e0b; outline-offset: 4px; }
+.btn:disabled { cursor: not-allowed; color: #788394; background: #e2e5ea; border-color: #d1d5db; box-shadow: none; opacity: .75; }
+.hint { max-width: 550px; text-align: center; color: #5e6b7c; line-height: 1.6; }
+footer { color: #68778b; }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+  <header><h1>Understanding box-sizing</h1><p>Compare how the CSS box model calculates an element's width.</p></header>
+  <main>
+    <section class="comparison">
+      <article class="demo default-box">
+        <h2>content-box</h2>
+        <div class="sample-box">Width: 220px<br>Padding: 24px<br>Border: 5px</div>
+        <p>The default value adds padding and border outside the declared width. Total width is 220 + 48 + 10 = <strong>278px</strong>.</p>
+      </article>
+      <article class="demo border-box">
+        <h2>border-box</h2>
+        <div class="sample-box">Width: 220px<br>Padding: 24px<br>Border: 5px</div>
+        <p>With border-box, padding and border are included inside the declared width. Total width stays <strong>220px</strong>.</p>
+      </article>
+    </section>
+  </main>
+  <footer><p>Assignment 8 · Question 8</p></footer>
+</body>
+</html>

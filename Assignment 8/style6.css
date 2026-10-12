@@ -1,0 +1,16 @@
+/* Question 6: Keyframe animations */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; color: #1f2d45; background: #f0f5ff; }
+header, footer { text-align: center; padding: 22px; }
+header h1 { margin-bottom: 8px; }
+.stage { flex: 1; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 22px; padding: 24px; }
+.animation-card { width: min(100%, 280px); min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; text-align: center; padding: 22px; background: white; border-radius: 15px; box-shadow: 0 8px 24px #1e3a8a18; }
+.animation-card h2, .animation-card p { margin: 0; }
+.moving-box { width: 42px; height: 42px; border-radius: 9px; background: #2563eb; animation: travel 2.5s ease-in-out infinite alternate; }
+@keyframes travel { from { transform: translateX(-70px) rotate(0); } to { transform: translateX(70px) rotate(180deg); } }
+.bouncing-ball { width: 44px; height: 44px; border-radius: 50%; background: #f97316; animation: bounce .8s ease-in-out infinite alternate; animation-iteration-count: 6; }
+@keyframes bounce { from { transform: translateY(-10px); } to { transform: translateY(35px); } }
+.color-text { font-size: 27px; font-weight: 800; animation: colors 3s ease-in-out infinite; animation-delay: .3s; }
+@keyframes colors { 0%, 100% { color: #2563eb; } 50% { color: #db2777; } }
+footer { color: #64748b; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

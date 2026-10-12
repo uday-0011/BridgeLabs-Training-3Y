@@ -1,0 +1,39 @@
+/* Question 4: CSS selector examples */
+* { box-sizing: border-box; }
+
+/* Element selector: applies to every paragraph. */
+p { color: #425466; line-height: 1.6; }
+
+/* Class selector: reusable highlight style. */
+.highlight { background: #fff2bf; padding: 8px; border-left: 4px solid #e5a000; }
+
+/* ID selector: targets one unique element. */
+#special-note { color: #9d174d; font-weight: bold; }
+
+/* Attribute selector: styles links that open a new tab. */
+a[target="_blank"] { color: #075fc7; text-decoration-thickness: 2px; }
+
+/* Attribute selector: targets email inputs. */
+input[type="email"] { width: min(100%, 360px); padding: 10px; border: 1px solid #aab7c4; border-radius: 6px; }
+
+/* Child combinator >: only direct paragraphs inside .parent. */
+.parent > p { background: #dff7e8; padding: 8px; }
+
+/* Descendant combinator: all paragraphs anywhere inside .parent. */
+.parent p { border-radius: 5px; }
+
+/* Adjacent sibling +: paragraph immediately after h3. */
+h3 + p { color: #6d28d9; font-weight: bold; }
+
+/* General sibling ~: later paragraphs after h3. */
+h3 ~ p { border-bottom: 1px dashed #b4a7d6; padding-bottom: 7px; }
+
+/* nth-child adds visual rhythm to list items. */
+li:nth-child(even) { background: #edf2f7; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #243447; }
+header, footer { text-align: center; padding: 24px; background: #1f3654; color: white; }
+header p { color: #e1e8f0; }
+main { max-width: 900px; margin: 26px auto; padding: 0 18px; }
+.panel { background: white; padding: 20px; margin-bottom: 18px; border-radius: 10px; box-shadow: 0 4px 14px #102a4314; }
+.panel h2 { margin-top: 0; color: #1d4ed8; }

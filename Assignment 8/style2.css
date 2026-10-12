@@ -1,0 +1,13 @@
+/* Question 2: CSS-only tooltips */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; background: #f4f1ff; color: #30264a; }
+header, footer { text-align: center; padding: 24px; }
+header h1 { margin-bottom: 8px; }
+.tooltip-area { flex: 1; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 36px; padding: 30px; }
+.tooltip-item { position: relative; text-align: center; width: 150px; padding: 24px 12px; background: white; border-radius: 14px; box-shadow: 0 8px 22px #37265a18; }
+.symbol { display: inline-grid; place-items: center; width: 62px; height: 62px; border-radius: 50%; color: white; background: #7657d6; font-size: 32px; }
+.tooltip-item p { margin-bottom: 0; font-weight: bold; }
+.tooltip { position: absolute; left: 50%; bottom: calc(100% - 4px); transform: translate(-50%, 8px); width: 190px; padding: 10px 12px; border-radius: 7px; background: #21183a; color: white; font-size: 13px; line-height: 1.4; opacity: 0; visibility: hidden; transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s; z-index: 2; }
+.tooltip::after { content: ""; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 7px solid transparent; border-top-color: #21183a; }
+.tooltip-item:hover .tooltip, .tooltip-item:focus-within .tooltip { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+footer { color: #6a5b85; }

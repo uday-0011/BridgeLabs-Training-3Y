@@ -1,0 +1,18 @@
+/* Question 1: Pseudo-classes */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #203047; background: #f3f6fb; }
+.page-header, footer { text-align: center; padding: 24px; background: #203a5e; color: white; }
+.page-header h1 { margin: 0 0 8px; }
+.examples { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 18px; padding: 28px; }
+.example { flex: 1 1 220px; max-width: 280px; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 5px 16px #182c4618; }
+.example h2 { margin-top: 0; color: #2563eb; }
+.demo-link { display: inline-block; color: #1d4ed8; padding: 8px; border-radius: 5px; }
+.demo-link:hover { color: white; background: #2563eb; }
+button { cursor: pointer; border: 0; padding: 10px 12px; border-radius: 6px; background: #e0eaff; color: #1e40af; }
+.focus-button:focus { outline: 3px solid #f59e0b; outline-offset: 3px; background: #fff0c2; }
+.active-button:active { transform: scale(.94); background: #0f766e; color: white; }
+.sample-list { padding-left: 24px; }
+.sample-list li { padding: 7px; border-radius: 4px; }
+.sample-list li:nth-child(odd) { background: #dbeafe; }
+footer { padding: 14px; }
+@media (max-width: 600px) { .examples { padding: 16px; } .example { max-width: none; } }

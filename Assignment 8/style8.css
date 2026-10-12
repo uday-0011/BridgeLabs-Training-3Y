@@ -1,0 +1,15 @@
+/* Question 8: Box-sizing comparison */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; color: #26364b; background: #f5f7fb; }
+header, footer { text-align: center; padding: 24px; }
+header h1 { margin: 0 0 8px; }
+main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.comparison { display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 24px; width: 100%; max-width: 850px; }
+.demo { flex: 1 1 300px; min-width: 0; padding: 22px; background: white; border-radius: 14px; box-shadow: 0 8px 24px #152a4518; }
+.demo h2 { margin-top: 0; }
+.sample-box { width: 220px; max-width: 100%; padding: 24px; border: 5px solid #1d4ed8; border-radius: 8px; font-size: 14px; line-height: 1.6; font-weight: bold; }
+.default-box .sample-box { box-sizing: content-box; background: #dbeafe; }
+.border-box .sample-box { box-sizing: border-box; background: #ffedd5; border-color: #c2410c; }
+.demo p { line-height: 1.6; }
+footer { color: #64748b; }
+@media (max-width: 520px) { main { padding: 16px; } .demo { flex-basis: 100%; } }

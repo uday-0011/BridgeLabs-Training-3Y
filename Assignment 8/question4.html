@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <header><h1>CSS Selectors Practice</h1><p>Examples of element, class, ID, attribute, and combinator selectors.</p></header>
+  <main>
+    <section class="panel">
+      <h2>Element and class selectors</h2>
+      <p>All paragraph elements receive a base style.</p>
+      <p class="highlight">This paragraph uses a class selector.</p>
+      <p id="special-note">This paragraph uses an ID selector.</p>
+    </section>
+    <section class="panel">
+      <h2>Attribute selector</h2>
+      <p><a href="https://example.com" target="_blank" rel="noreferrer">This link has target="_blank".</a></p>
+      <p><input type="email" placeholder="Email input uses an attribute selector" aria-label="Email example"></p>
+    </section>
+    <section class="panel relationships">
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child selector (div > p).</p>
+        <div><p>Descendant selector (div p) also matches this paragraph.</p></div>
+      </div>
+      <h3>Adjacent sibling heading</h3>
+      <p>This paragraph immediately follows h3 and uses +.</p>
+      <p>This later paragraph is selected by the general sibling ~ selector.</p>
+      <ul><li>List item one</li><li>List item two</li><li>List item three</li></ul>
+    </section>
+  </main>
+  <footer><p>Assignment 8 · Question 4</p></footer>
+</body>
+</html>

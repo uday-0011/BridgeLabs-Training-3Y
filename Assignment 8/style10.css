@@ -1,0 +1,31 @@
+/* Question 10: Complete mini UI layout */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: Arial, sans-serif; color: #1f2c43; background: #f2f6fc; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px max(5%, calc((100% - 1050px) / 2)); background: #fff; border-bottom: 1px solid #e5eaf2; }
+.brand { color: #4338ca; font-size: 22px; font-weight: 800; text-decoration: none; }
+nav { display: flex; gap: 20px; }
+nav a { color: #48566c; text-decoration: none; font-weight: 600; transition: color .2s ease; }
+nav a:hover { color: #4338ca; }
+nav a:focus-visible { outline: 2px solid #4338ca; outline-offset: 4px; }
+main { flex: 1; display: flex; justify-content: center; align-items: center; padding: 34px 18px; }
+.main-card { width: min(100%, 760px); padding: clamp(20px, 4vw, 36px); background: white; border: 1px solid #e1e7f0; border-radius: 18px; box-shadow: 0 16px 40px #263b6017; }
+.card-intro { display: flex; align-items: center; gap: 25px; margin-bottom: 26px; }
+.card-intro img { width: 42%; max-width: 250px; height: 190px; object-fit: cover; border-radius: 12px; }
+.eyebrow { margin: 0 0 8px; color: #4f46e5; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; }
+.card-intro h1 { margin: 0 0 10px; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.15; }
+.card-intro p:last-child { color: #68758a; line-height: 1.6; }
+form { display: flex; flex-direction: column; gap: 9px; }
+label { margin-top: 5px; font-size: 14px; font-weight: 700; }
+input { width: 100%; padding: 12px 13px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; transition: border-color .2s, box-shadow .2s; }
+input:focus { outline: none; border-color: #6366f1; box-shadow: 0 0 0 4px #6366f126; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+button { padding: 11px 18px; border: 0; border-radius: 8px; font-weight: 700; cursor: pointer; transition: transform .2s, background .2s, box-shadow .2s; }
+button:hover { transform: translateY(-2px); box-shadow: 0 6px 12px #1e293b1a; }
+button:active { transform: scale(.97); }
+button:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
+.primary { background: #4f46e5; color: white; }
+.primary:hover { background: #3730a3; }
+.secondary { background: #e8edf5; color: #29384e; }
+.secondary:hover { background: #d7dfeb; }
+footer { text-align: center; padding: 18px; color: #68758a; font-size: 14px; }
+@media (max-width: 600px) { .site-header { flex-direction: column; } .card-intro { flex-direction: column; align-items: stretch; } .card-intro img { width: 100%; max-width: none; height: 200px; } nav { gap: 16px; } }

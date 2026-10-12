@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Components Page</title>
+  <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+  <header><h1>QuickFind</h1><p>A simple interface component demo</p></header>
+  <main>
+    <section class="ui-card">
+      <h2>Find what you need</h2>
+      <form class="search-row" action="#" method="get">
+        <label class="sr-only" for="search">Search</label>
+        <input id="search" name="q" type="search" placeholder="Search articles, guides..." />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+      <div class="actions">
+        <button class="action-button">Create new</button>
+        <button class="action-button muted">View saved</button>
+      </div>
+      <label for="category">Choose a category</label>
+      <select id="category" name="category">
+        <option value="">Select category</option>
+        <option>Design</option><option>Development</option><option>Learning</option>
+      </select>
+      <p class="note">Focus the search box or menu to see the focus style.</p>
+    </section>
+  </main>
+  <footer><p>Assignment 8 · Question 7</p></footer>
+</body>
+</html>
