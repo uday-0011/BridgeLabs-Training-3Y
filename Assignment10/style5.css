@@ -1,0 +1,14 @@
+/* Question 5: Bootstrap CSS variables are overridden to create a custom theme. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+:root { --bs-body-font-family: 'DM Sans', sans-serif; --bs-primary: #56745d; --bs-primary-rgb: 86,116,93; --bs-body-color: #29352e; --bs-body-bg: #fbf8f2; }
+body { background: var(--bs-body-bg); }
+.blog-header { border-bottom: 1px solid #e9e2d7; }
+.blog-brand { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: #304c39; text-decoration: none; }
+nav a, .blog-link { color: #56745d; text-decoration: none; font-weight: 700; }
+nav a:hover, .blog-link:hover { color: #263e2d; }
+h1, h2 { font-family: 'Playfair Display', serif; }
+.blog-accent { color: #56745d; letter-spacing: .08em; }
+.intro { max-width: 600px; }
+.blog-card { border: 1px solid #ece4d8; border-radius: 1rem; overflow: hidden; background: #fffdf9; }
+.blog-card .card-img-top { height: 250px; object-fit: cover; }
+.blog-about { background: #e8eee5; }

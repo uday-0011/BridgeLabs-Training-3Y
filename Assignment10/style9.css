@@ -1,0 +1,8 @@
+/* Question 9: Custom blog card styling; pagination uses Bootstrap classes. */
+body { background: #fbfcfe; }
+.blog-top { border-bottom: 1px solid #e7ebf1; }
+.brand { color: #1e293b; font-family: Georgia, serif; font-size: 1.8rem; font-weight: 700; text-decoration: none; }
+.card { border: 0; overflow: hidden; box-shadow: 0 .4rem 1.2rem rgba(20,40,80,.07); }
+.card-img-top { height: 230px; object-fit: cover; }
+.card-body { position: relative; }
+.pagination { gap: .2rem; }

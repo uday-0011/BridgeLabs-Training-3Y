@@ -1,0 +1,3 @@
+/* Question 6: Summary panels complement Bootstrap alerts. */
+.summary { border: 1px solid #e6eaf0; box-shadow: 0 .25rem .8rem rgba(0,0,0,.04); }
+.alert { margin-bottom: 0; }

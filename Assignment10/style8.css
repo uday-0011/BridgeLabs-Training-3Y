@@ -1,0 +1,6 @@
+/* Question 8: Hover effect and highlighted Pro card. */
+.price-card { position: relative; border: 1px solid #e0e6ef; border-radius: 1rem; transition: transform .25s ease, box-shadow .25s ease; }
+.price-card:hover { transform: translateY(-7px); box-shadow: 0 1rem 2rem rgba(20,40,80,.12); }
+.price-card li { padding: .45rem 0; color: #49566a; }
+.pro-card { border: 2px solid #0d6efd; box-shadow: 0 .5rem 1.5rem rgba(13,110,253,.12); }
+.popular-label { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); padding: .3rem .7rem; border-radius: 2rem; background: #0d6efd; color: white; font-size: .68rem; font-weight: 800; white-space: nowrap; }

@@ -1,0 +1,5 @@
+/* Question 3: Custom hover effect complements Bootstrap cards. */
+.product-card { border: 0; overflow: hidden; box-shadow: 0 .25rem 1rem rgba(0,0,0,.07); transition: transform .25s ease, box-shadow .25s ease; }
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 1rem 2rem rgba(0,0,0,.13); }
+.product-card .card-img-top { height: 230px; object-fit: cover; transition: transform .35s ease; }
+.product-card:hover .card-img-top { transform: scale(1.04); }

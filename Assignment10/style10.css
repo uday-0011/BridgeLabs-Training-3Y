@@ -1,0 +1,8 @@
+/* Question 10: Travel visuals with Bootstrap carousel and progress utilities. */
+.travel-nav, .travel-footer { background: #102a43; }
+.hero-image { height: min(68vh, 650px); min-height: 360px; object-fit: cover; filter: brightness(.68); }
+.carousel-caption { bottom: 18%; }
+.carousel-caption h1, .carousel-caption h2 { text-shadow: 0 2px 12px rgba(0,0,0,.35); }
+.deal-panel { background: #f3f7fb; border: 1px solid #e1e9f2; }
+.progress { height: 1.2rem; }
+@media (max-width: 576px) { .hero-image { height: 420px; min-height: 0; } .carousel-caption { bottom: 12%; } .carousel-caption h1, .carousel-caption h2 { font-size: 2rem; } }

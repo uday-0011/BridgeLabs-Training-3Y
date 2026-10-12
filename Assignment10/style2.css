@@ -1,0 +1,4 @@
+/* Question 2: Bootstrap spacing, text and background utilities do most of the layout work. */
+.profile-image { width: 220px; height: 220px; object-fit: cover; }
+.card { border: 0; box-shadow: 0 .25rem 1rem rgba(18,38,63,.06); }
+.form-control:focus { border-color: #86b7fe; box-shadow: 0 0 0 .25rem rgba(13,110,253,.15); }
