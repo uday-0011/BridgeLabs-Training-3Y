@@ -1,0 +1,15 @@
+/* Grid creates 2–3 columns; below 700px it becomes stacked rows. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #182b43; background: #f3f7fb; }
+.header { padding: 3rem 1rem 2rem; text-align: center; background: #e5eefb; }
+.header h1 { margin: .35rem 0; font-size: clamp(2rem, 4vw, 3rem); } .header p:last-child { color: #596b83; }
+.tag { color: #326bc0; font-weight: 800; font-size: .75rem; letter-spacing: .15em; }
+main { max-width: 1150px; margin: auto; padding: 2rem 1.25rem 3rem; }
+.concepts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.concept { background: white; border: 1px solid #e0e8f2; border-radius: 14px; padding: 1.4rem; transition: transform .25s, box-shadow .25s, border-color .25s; }
+.concept:hover { transform: translateY(-4px); border-color: #80a8e8; box-shadow: 0 12px 28px #1a3c6815; }
+.concept h2 { margin-top: 0; font-size: 1.2rem; } .concept p { color: #596b83; line-height: 1.55; }
+code { display: block; overflow-wrap: anywhere; padding: .65rem; background: #eef3fa; color: #234f8f; border-radius: 7px; font-size: .85rem; }
+footer { text-align: center; padding: 1.5rem; color: #596b83; }
+@media (max-width: 900px) { .concepts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .concepts { grid-template-columns: 1fr; } .concept { display: flex; flex-direction: column; gap: .2rem; } }

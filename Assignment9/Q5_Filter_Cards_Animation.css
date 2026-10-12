@@ -1,0 +1,16 @@
+/* Cards fade in on load and lift on hover. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f5f2; color: #252c35; font-family: Arial, sans-serif; }
+.heading { text-align: center; padding: 3rem 1rem 2rem; } .heading h1 { font-size: clamp(2rem, 4vw, 3rem); margin: .4rem; }
+.eyebrow, .role { color: #a35d42; font-size: .75rem; font-weight: 800; letter-spacing: .15em; }
+.heading > p:last-child { color: #737985; }
+main { max-width: 1100px; margin: auto; padding: 1rem 1.5rem 3.5rem; }
+.profiles { display: flex; gap: 1.5rem; } .profile { flex: 1; min-width: 0; overflow: hidden; background: white; border-radius: 18px; box-shadow: 0 8px 25px #34251c10; animation: fadeIn .8s ease both; transition: transform .3s, box-shadow .3s; }
+.profile:nth-child(2) { animation-delay: .15s; } .profile:nth-child(3) { animation-delay: .3s; }
+.profile:hover { transform: translateY(-10px); box-shadow: 0 18px 35px #34251c20; }
+.profile img { width: 100%; height: 270px; object-fit: cover; display: block; transition: filter .35s; } .profile:hover img { filter: none; }
+.mono { filter: grayscale(1); } .sepia { filter: sepia(.85); } .soft { filter: saturate(.55); }
+.profile-body { padding: 1.4rem; } .role { margin: 0; } .profile h2 { margin: .5rem 0; } .profile-body p:last-child { color: #737985; line-height: 1.6; }
+footer { text-align: center; padding: 1.5rem; color: #737985; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 800px) { .profiles { flex-direction: column; } .profile img { height: 300px; } }

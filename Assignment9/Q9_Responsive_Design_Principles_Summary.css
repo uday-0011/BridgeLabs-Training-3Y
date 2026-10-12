@@ -1,0 +1,15 @@
+/* Hover adds a gradient and switches text colour for each principle card. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f8f8fc; color: #242747; font-family: Arial, sans-serif; }
+.header { text-align: center; padding: 3rem 1rem 2rem; } .header h1 { font-size: clamp(2rem, 4vw, 3rem); margin: .4rem auto; max-width: 800px; } .header p:last-child { color: #73758d; }
+.eyebrow { color: #6758c7; font-size: .75rem; font-weight: 800; letter-spacing: .15em; }
+main { max-width: 1200px; margin: auto; padding: 1rem 1.5rem 3.5rem; }
+.principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.principle { padding: 1.6rem; background: white; border: 1px solid #e7e6f3; border-radius: 18px; transition: background .3s, color .3s, transform .3s, box-shadow .3s; }
+.principle:hover { background: linear-gradient(135deg, #6458c7, #287fb8); color: white; transform: translateY(-5px); box-shadow: 0 15px 30px #4a50a52b; }
+.number { display: inline-grid; place-items: center; width: 42px; height: 42px; background: #eeecff; color: #5c4fc0; border-radius: 50%; font-weight: 800; }
+.principle h2 { margin: 1rem 0 .5rem; } .principle p { line-height: 1.6; color: #6e7188; } .principle:hover p { color: #f1f4ff; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: .9rem; border-radius: 10px; background: #f0f1f8; color: #34416a; font-size: .83rem; } .principle:hover pre { background: #ffffff20; color: white; }
+footer { text-align: center; padding: 1.5rem; color: #73758d; }
+@media (max-width: 900px) { .principles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .principles { grid-template-columns: 1fr; } }

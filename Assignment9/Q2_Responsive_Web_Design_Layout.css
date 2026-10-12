@@ -1,0 +1,16 @@
+/* Flexbox aligns navigation and feature boxes. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f7f8fc; color: #202b3c; min-height: 100vh; display: flex; flex-direction: column; }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 7%; background: #172b4d; color: white; }
+.logo { font-size: 1.35rem; font-weight: 800; color: white; text-decoration: none; }
+nav { display: flex; gap: 1.5rem; } nav a { color: #e5edff; text-decoration: none; } nav a:hover { color: #9fc1ff; }
+main { flex: 1; width: min(1100px, 90%); margin: auto; }
+.intro { text-align: center; padding: 4rem 1rem 2rem; } .intro h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: .5rem 0; } .intro p:last-child { color: #627086; }
+.eyebrow { color: #2865c7; font-weight: 700; letter-spacing: .14em; font-size: .8rem; }
+.features { display: flex; gap: 1.25rem; padding: 1.5rem 0 4rem; }
+.feature { flex: 1; padding: 1.7rem; background: white; border: 1px solid #e6eaf2; border-radius: 16px; box-shadow: 0 8px 25px #182b4d0b; transition: transform .25s, box-shadow .25s; }
+.feature:hover { transform: scale(1.035); box-shadow: 0 14px 30px #182b4d18; }
+.feature span { color: #2865c7; font-weight: 800; } .feature p { color: #627086; line-height: 1.6; }
+footer { text-align: center; padding: 1.4rem; background: #e9edf5; color: #56647a; }
+@media (max-width: 750px) { .features { flex-direction: column; } .topbar { padding-inline: 5%; } }
+@media (max-width: 480px) { .topbar { align-items: flex-start; flex-direction: column; gap: 1rem; } nav { flex-wrap: wrap; gap: 1rem; } }

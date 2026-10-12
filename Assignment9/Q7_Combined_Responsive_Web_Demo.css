@@ -1,0 +1,14 @@
+/* Grid + Flexbox combine responsive layout techniques. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f7fa; color: #223149; font-family: Arial, sans-serif; animation: appear .7s ease both; }
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.2rem 6%; background: #142b4a; }
+.brand { color: white; font-size: 1.25rem; font-weight: 800; text-decoration: none; } nav { display: flex; gap: 1.2rem; flex-wrap: wrap; } nav a { color: #dbe8fb; text-decoration: none; } nav a:hover { color: #8bc4ff; }
+main { max-width: 1200px; margin: auto; padding: 1.5rem; } .welcome { text-align: center; padding: 2rem 1rem 2.5rem; } .welcome h1 { font-size: clamp(2rem, 4vw, 3.2rem); margin: .4rem; } .welcome p:last-child, .muted { color: #69778b; } .eyebrow { color: #316dc3; font-size: .75rem; font-weight: 800; letter-spacing: .15em; }
+.demo-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 1.1rem; } .panel { min-width: 0; padding: 1.4rem; background: white; border: 1px solid #e1e7ef; border-radius: 16px; box-shadow: 0 8px 24px #182d4b0b; animation: appear .7s ease both; transition: transform .25s, box-shadow .25s; }
+.panel:hover { transform: translateY(-4px); box-shadow: 0 15px 30px #182d4b16; } .panel h2 { margin-top: 0; font-size: 1.2rem; } .panel p, li { line-height: 1.6; color: #58677b; }
+.mini-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; } .mini-gallery img { width: 100%; height: 110px; object-fit: cover; border-radius: 8px; transition: transform .25s; } .mini-gallery img:hover { transform: scale(1.05); }
+.snippet { display: grid; gap: .45rem; padding: .8rem 0; border-bottom: 1px solid #edf0f5; } code { display: block; overflow-wrap: anywhere; padding: .55rem; border-radius: 6px; background: #eef3fa; color: #28558d; font-size: .8rem; }
+footer { text-align: center; padding: 1.5rem; background: #e8edf5; color: #58677b; } footer a { color: #245eab; }
+@keyframes appear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 900px) { .demo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .gallery-panel { grid-column: 1 / -1; } }
+@media (max-width: 700px) { .topbar { align-items: flex-start; flex-direction: column; } .demo-grid { grid-template-columns: 1fr; } .gallery-panel { grid-column: auto; } }

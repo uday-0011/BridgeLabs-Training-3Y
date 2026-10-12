@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="Q9_Responsive_Design_Principles_Summary.css">
+</head>
+<body>
+  <!-- Responsive Design Principles Summary: semantic HTML structure -->
+  <header class="header"><p class="eyebrow">THE FOUNDATIONS</p><h1>Three principles of responsive design</h1><p>Build flexible experiences, not fixed screenshots.</p></header>
+<main><section class="principles"><article class="principle"><span class="number">01</span><h2>Fluid Layouts</h2><p>Use flexible units and layout systems so content can expand or contract with available space.</p><pre><code>.layout {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+}</code></pre></article><article class="principle"><span class="number">02</span><h2>Flexible Media</h2><p>Make images and videos fit their containers without overflowing or losing their proportions.</p><pre><code>img, video {
+  max-width: 100%;
+  height: auto;
+}</code></pre></article><article class="principle"><span class="number">03</span><h2>Breakpoints</h2><p>Introduce layout changes when the content needs more room or becomes crowded.</p><pre><code>@media (max-width: 600px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}</code></pre></article></section></main>
+<footer>Flexible first. Specific when needed.</footer>
+</body>
+</html>
