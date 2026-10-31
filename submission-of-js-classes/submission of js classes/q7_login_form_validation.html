@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Validation</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 520px; margin: 2rem auto; padding: 0 1rem; }
+    label { display: block; margin-top: 1rem; } input { width: 100%; box-sizing: border-box; padding: .6rem; }
+    #message { white-space: pre-line; } .success { color: green; } .failure { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Login Form Validation</h1>
+  <form id="loginForm" novalidate>
+    <label for="username">Username</label><input id="username" name="username">
+    <label for="password">Password</label><input id="password" name="password" type="password">
+    <button type="submit">Validate login</button>
+  </form>
+  <p id="message" aria-live="polite"></p>
+  <script src="q7_login_form_validation.js"></script>
+</body>
+</html>

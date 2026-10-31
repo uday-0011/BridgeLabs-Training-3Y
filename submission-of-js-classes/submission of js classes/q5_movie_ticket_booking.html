@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ticket Booking</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 520px; margin: 2rem auto; padding: 0 1rem; }
+    label { display: block; margin-top: 1rem; } input { width: 100%; box-sizing: border-box; padding: .6rem; }
+    .error { color: red; } .ticket { border: 1px dashed #555; padding: 1rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Movie Ticket Booking</h1>
+  <form id="bookingForm" novalidate>
+    <label for="name">Name</label><input id="name" name="name">
+    <label for="email">Email</label><input id="email" name="email" type="email">
+    <label for="seats">Seats (1–10)</label><input id="seats" name="seats" type="number" min="1" max="10">
+    <button type="submit">Book tickets</button>
+  </form>
+  <p id="bookingMessage" class="error" aria-live="polite"></p>
+  <div id="ticket" class="ticket" hidden></div>
+  <script src="q5_movie_ticket_booking.js"></script>
+</body>
+</html>
