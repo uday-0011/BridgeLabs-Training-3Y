@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; padding: 25px; background: #f4f6f8; }
+.container { max-width: 500px; margin: auto; background: white; padding: 24px; border-radius: 12px; }
+label, input { display: block; width: 100%; box-sizing: border-box; }
+label { margin-top: 14px; }
+input { padding: 10px; margin-top: 5px; }
+button { margin-top: 18px; padding: 10px 16px; cursor: pointer; }
+.error { display: block; min-height: 18px; color: #c00000; }
+.success { color: #087a35; font-weight: bold; }
